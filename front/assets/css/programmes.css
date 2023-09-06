@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: var(--semi-bold);
+}
+
+:root {
+    --bleu: #6EC1E4;
+    --orange: #F7812E;
+    --h1size: 42px;
+    --h2size: 29px;
+    --h3size: 25px;
+    --bold: 700;
+    --semi-bold: 600;
+    --psize: 20px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: var(--orange);
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    position: absolute;
+    height: 30px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+a {
+    /* font-weight: var(--semi-bold); */
+    color: white;
+}
+
+nav>#logo>img {
+    width: 120px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    display: flex;
+    margin: 0 20px;
+}
+
+.burger{
+    display: none;
+}
+
+main {
+    width: 100%;
+    padding: 8em 0 0 0;
+    min-height: 300vh;
+}
+
+main>h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: var(--h1size);
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+main>span {
+    background-image: url(../img/Ellipse\ 5.svg);
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 90px;
+    height: 330px;
+}
+
+main>#smile {
+    position: absolute;
+    top: 300px;
+}
+
+h2 {
+    
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: var(--h2size);
+}
+
+section{
+    position: relative;
+}
+
+section>figure>img {
+    border: solid black 2px;
+    border-radius: 8px;
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.227);
+    height: 230px;
+    width: 220px;
+}
+
+section>figure {
+    left: 75%;
+    top:25%;
+    position: absolute;
+    flex-wrap: wrap;
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 30px;
+    font-size: var(--psize);
+    display: block;
+    width: 70%;
+    padding-left: 15%;
+}
+
+
+hr {
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    width: 400px;
+    margin: 10px;
+    margin-left: 35%;
+}
+
+
+section>h3 {
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    font-size: var(--h3size);
+}
+footer>a>img {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 200px;
+}
+
+footer {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    background: var(--orange);
+    margin-top: 3rem;
+}
+footer>ul{
+    margin-top: 150px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 30%;
+    width: 30%;
+    height: 100%;
+}
+
+footer>ul>li {
+    padding: 10px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px)and (orientation: Landscape){
+    .burger{
+        display: inline-block;
+        width: 40px;
+    }
+    }
