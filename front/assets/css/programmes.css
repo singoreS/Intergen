@@ -5,7 +5,6 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Raleway', sans-serif;
-    font-weight: var(--semi-bold);
 }
 
 :root {
@@ -142,6 +141,8 @@ section>h3 {
     font-family: 'Lilita One', cursive;
     font-size: var(--h3size);
 }
+
+
 footer>a>img {
     position: absolute;
     top: 60px;
@@ -157,11 +158,11 @@ footer {
     background: var(--orange);
     margin-top: 3rem;
 }
-footer>ul{
+
+footer>ul {
     margin-top: 150px;
     justify-content: space-between;
-    display: flex;
-    margin-left: 30%;
+    margin-left: 13%;
     width: 30%;
     height: 100%;
 }

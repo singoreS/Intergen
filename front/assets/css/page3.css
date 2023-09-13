@@ -82,8 +82,7 @@ footer {
 footer>ul {
     margin-top: 150px;
     justify-content: space-between;
-    display: flex;
-    margin-left: 30%;
+    margin-left: 13%;
     width: 30%;
     height: 100%;
 }

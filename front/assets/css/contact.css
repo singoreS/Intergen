@@ -5,7 +5,6 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Raleway', sans-serif;
-    font-weight: var(--semi-bold);
 }
 
 :root {
@@ -26,34 +25,46 @@ header {
     z-index: 10;
 }
 
-nav {
-    position: absolute;
+header > nav {
+    z-index: 10;
+    background: var(--orange);
+    position: fixed;
     height: 30px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-}
-
-a {
-    /* font-weight: var(--semi-bold); */
+  }
+  
+  a {
+    font-weight: var(--semi-bold);
     color: white;
-}
-
-nav>#logo>img {
+  }
+  
+  nav > #logo > img {
     width: 120px;
-}
-
-nav>ul {
+  }
+  
+  nav > ul {
     display: flex;
-}
-
-nav>ul>li {
+  }
+  
+  nav > ul > li {
     display: flex;
     margin: 0 20px;
-
-}
+    padding-top: 15px;
+  }
+  
+  nav > ul > li:nth-child(6) {
+    display: block;
+    width: 130px;
+    height: 45px;
+    background: var(--bleu);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
 
 main>span {
     background-image: url(../img/Ellipse\ 5.svg);
@@ -75,7 +86,6 @@ main>#un {
 
 main>#un>p {
     font-size: var(--psize);
-    font-weight: var(--semi-bold);
     text-align: center;
 }
 
@@ -111,7 +121,7 @@ main>#deux {
 
 form{
     display: block;
-    width: 60%;
+    width: 40%;
     margin: 10% 30% ;
     border: 2px solid black;
     padding: 30px;
@@ -137,7 +147,7 @@ input{
 
 textarea{
     padding: 10px;
-    width: 100%;
+    width: 90%;
     min-height: 10em;
     margin: 10px;
 }
@@ -266,12 +276,11 @@ footer>ul>li {
         display: block;
         padding: 10px;
         font-size: var(--psize);
-        font-weight: var(--semi-bold);
         text-align: center;
     }
 
     main {
-        height: 230vh;
+        min-height: 30vh;
     }
 
     form{
