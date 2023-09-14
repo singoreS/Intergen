@@ -54,6 +54,7 @@ header > #article4 {
   position: absolute;
 }
 
+
 header > #article3 {
   background-image: url(../img/photo\ header\ petit\ garcon.jpg);
   background-size: cover;
@@ -153,7 +154,7 @@ nav > ul > li {
   padding-top: 15px;
 }
 
-nav>ul>li:nth-child(6){
+nav>ul>li:last-child{
     display: block;
     width: 130px;
     height: 45px;

@@ -56,7 +56,7 @@ header > nav {
     padding-top: 15px;
   }
   
-  nav > ul > li:nth-child(6) {
+  nav > ul > li:last-child {
     display: block;
     width: 130px;
     height: 45px;
