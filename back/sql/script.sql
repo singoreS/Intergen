@@ -31,7 +31,7 @@ CREATE TABLE Intergen.programme(
     id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     datestart DATE NOT NULL,
     datefinish DATE NOT NULL,
-    firstname VARCHAR(30) NOT NULL,
+    firstname VARCHAR(50) NOT NULL,
     association_id TINYINT UNSIGNED NOT NULL,
     FOREIGN KEY(association_id) REFERENCES
     Intergen.association(id)
@@ -40,15 +40,15 @@ CREATE TABLE Intergen.programme(
 
 CREATE TABLE Intergen.activiter(
     id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    liste_activiter VARCHAR(100) NOT NULL
+    list_activiter VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Intergen.donneur(
     id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    email VARCHAR(100) NOT NULL,
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
-    adresse_postale VARCHAR(10) NOT NULL
+    email VARCHAR(100) NOT NULL,
+    adresse VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Intergen.don(
@@ -107,35 +107,19 @@ VALUE
 
 INSERT INTO Intergen.programme
 VALUE 
-    (NULL, '2023-09-04', '2023-09-08', 'Piscine', 1),
-    (NULL, '2023-09-11', '2023-09-15', 'Informatique', 1),
-    (NULL, '2023-09-18', '2023-09-22', 'Cuisine', 1),
-    (NULL, '2023-09-25', '2023-09-29', 'Atelier Artistique', 1),
-    (NULL, '2023-09-02', '2023-09-06', 'Histoire', 1)
-;
+    (NULL, '2023-09-04', '2023-09-08', 'Programme Semaine 1', 1),
+    (NULL, '2023-09-11', '2023-09-15', 'Programme Semaine 2', 1),
+    (NULL, '2023-09-18', '2023-09-22', 'Programme Semaine 3', 1),
+    (NULL, '2023-09-25', '2023-09-29', 'Programme Semaine 4', 1),
+    (NULL, '2023-10-02', '2023-10-06', 'Programme Semaine 5', 1)
+    ;
 
 -- INSERT INTO Intergen.activiter
--- VALUE 
--- (NULL, 'Piscine','Informatique','Cuisine','Atelier Artistique','Histoire' )
--- ;
+-- VALUE
+--     (NULL, '')
 
 
-
--- INSERT INTO Intergen.etablissement
--- VALUE 
--- (NULL, 'Orphelinat 1 ' ),
--- (NULL, 'Orphelinat 2 ' ),
--- (NULL, 'Orphelinat 3 ' ),
--- (NULL, 'Orphelinat 4 ' ),
--- (NULL, 'Orphelinat 5 ' )
--- ;
-
--- INSERT INTO Intergen.donneur
--- VALUE 
--- (NULL, 'Donneur 1' ),
--- (NULL, 'Donneur 2' ),
--- (NULL, 'Donneur 3' ),
--- (NULL, 'Donneur 4' ),
--- (NULL, 'Donneur 5' ),
--- (NULL, 'Donneur 6' )
--- ;
+INSERT INTO Intergen.donneur
+VALUE 
+    (NULL, 'Maimouna', 'Kone', 'maimouna@intergen.com', '1 rue ephad1 75000 Paris')
+;
