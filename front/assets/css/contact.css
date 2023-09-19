@@ -1,327 +1,379 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
 }
 
 :root {
-    --bleu: #6EC1E4;
-    --orange: #F7812E;
-    --h1size: 60px;
-    --h2size: 19px;
-    --h3size: 17px;
-    --semi-bold: 600;
-    --psize: 18px;
+  --bleu: #6ec1e4;
+  --orange: #f7812e;
+  --h1size: 60px;
+  --h2size: 19px;
+  --h3size: 17px;
+  --semi-bold: 600;
+  --psize: 18px;
 }
 
 header {
-    width: 100%;
-    height: 80px;
-    background: var(--orange);
-    position: fixed;
-    z-index: 10;
+  width: 100%;
+  height: 80px;
+  background: var(--orange);
+  position: fixed;
+  z-index: 10;
 }
 
 header > nav {
-    z-index: 10;
-    background: var(--orange);
-    position: fixed;
-    height: 30px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
-  
-  a {
-    font-weight: var(--semi-bold);
-    color: white;
-  }
-  
-  nav > #logo > img {
-    width: 120px;
-  }
-  
-  nav > ul {
-    display: flex;
-  }
-  
-  nav > ul > li {
-    display: flex;
-    margin: 0 20px;
-    padding-top: 15px;
-  }
-  
-  nav > ul > li:last-child {
-    display: block;
-    width: 130px;
-    height: 45px;
-    background: var(--bleu);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-
-main>span {
-    background-image: url(../img/Ellipse\ 5.svg);
-    background-size: cover;
-    position: absolute;
-    top: 25%;
-    right: 0;
-    width: 90px;
-    height: 330px;
+  z-index: 10;
+  background: var(--orange);
+  position: fixed;
+  height: 30px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
-main>#un {
-
-    height: 160px;
-    position: absolute;
-    top: 17%;
-    left: 5px;
+a {
+  font-weight: var(--semi-bold);
+  color: white;
 }
 
-main>#un>p {
-    font-size: var(--psize);
-    text-align: center;
+nav > #logo > img {
+  width: 120px;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li {
+  display: flex;
+  margin: 0 20px;
+  padding-top: 15px;
+}
+
+nav > ul > li:last-child {
+  display: block;
+  width: 130px;
+  height: 45px;
+  background: var(--bleu);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+main > span {
+  background-image: url(../img/Ellipse\ 5.svg);
+  background-size: cover;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 90px;
+  height: 330px;
+}
+
+main > #un {
+  height: 90px;
+  position: relative;
+}
+
+main > #un > p {
+  position: absolute;
+  font-size: var(--psize);
+  text-align: center;
+  width: 40%;
+  left: 50%;
+  top: 7em;
+}
+
+
+
+div {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  left: 35em;
+  top: 27em;
 }
 
 h1 {
-    color: black;
-    font-size: 60px;
-    font-family: 'Lilita One', cursive;
-    text-align: center;
+  color: black;
+  font-size: 60px;
+  font-family: "Lilita One", cursive;
+  text-align: center;
 }
 
 main {
-    padding-top: 35vh;
-    min-height: 130vh;
+  padding-top: 35vh;
+  min-height: 130vh;
 }
-
-main>#deux {
-    position: relative;
-    display: flex;
-    top: 20%;
-    
-}
-
 
 #smiley1 {
+  background-image: url(../img/Happy\ Cloud.svg);
+  background-size: cover;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  height: 80px;
+  width: 80px;
+}
+
+form {
+  width: 35%;
+  margin: 50px;
+  border: 2px solid black;
+  padding: 20px;
+  background: var(--orange);
+  border-radius: 10px;
+  color: white;
+}
+
+form > h2 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  height: 30px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+label {
+  font-size: var(--psize);
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  min-height: 5em;
+  margin: 10px;
+}
+
+button {
+  background: white;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 25%;
+  height: 30px;
+}
+
+footer > a > img {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 200px;
+}
+
+footer {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  background: var(--orange);
+  margin-top: 3rem;
+}
+
+footer > ul {
+  margin-top: 150px;
+  justify-content: space-between;
+  margin-left: 13%;
+  width: 30%;
+  height: 100%;
+}
+
+footer > ul > li {
+  padding: 10px;
+  width: 100%;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) and (orientation: Landscape) {
+  #smiley1 {
     background-image: url(../img/Happy\ Cloud.svg);
     background-size: cover;
     position: absolute;
     left: 100px;
-    top: 500px;
+    top: 200px;
     height: 80px;
     width: 80px;
-}
+  }
 
-form{
-    display: block;
-    width: 40%;
-    margin: 10% 30% ;
+  form {
+    width: 35%;
+    margin: 50px;
     border: 2px solid black;
-    padding: 30px;
+    padding: 20px;
     background: var(--orange);
     border-radius: 10px;
     color: white;
-    font-size: 20px;
-}
+  }
 
-form>h2{
+  form > h2 {
     text-align: center;
-    padding-bottom: 1em;
-}
+  }
 
-input{
+  input {
     padding: 10px;
-    height: 50px;
+    height: 30px;
     width: 100%;
-    outline: none;
     border: 1px solid black;
-    margin: 10px;
-}
+    margin: 5px;
+  }
 
-textarea{
+  label {
+    font-size: var(--psize);
+  }
+
+  textarea {
     padding: 10px;
-    width: 90%;
-    min-height: 10em;
+    width: 100%;
+    min-height: 5em;
     margin: 10px;
-}
+  }
 
-button{
+  button {
     background: white;
     width: 50%;
     margin-top: 10px;
     margin-left: 25%;
     height: 30px;
-}
+  }
 
-footer>a>img {
+  div{
+    width: 400px;
+    height: 500px;
     position: absolute;
-    top: 60px;
-    left: 60px;
-    width: 200px;
+    left: 20em;
+    top: 27em;
 }
 
-footer {
-    position: relative;
-    padding: 10px;
-    display: flex;
-    width: 100%;
-    background: var(--orange);
-    margin-top: 3rem;
-}
-
-footer>ul {
-    margin-top: 150px;
-    justify-content: space-between;
-    margin-left: 13%;
-    width: 30%;
-    height: 100%;
-}
-
-footer>ul>li {
-    padding: 10px;
-    width: 100%;
-}
-.burger{
+  nav > ul {
     display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    width: 40px;
+  }
 }
 
-@media screen and (max-width: 768px)and (orientation: Landscape){
+@media screen and (max-width: 320px) and (orientation: Portrait) {
+  header > nav > a > img {
+    display: block;
+    width: 60px;
+  }
 
-    main>#deux {
-        position: relative;
-        display: flex;
-        top: 30%;
-        right: 10%;
+  .burger {
+    display: inline-block;
+    width: 30px;
+  }
+
+  h1 {
+    margin-left: 5rem;
+    color: black;
+    font-size: 40px;
+    font-family: "Lilita One", cursive;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  main > span {
+    background-image: url(../img/Ellipse\ 5.svg);
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 30px;
+    height: 100px;
+  }
+  #smiley1 {
+    display: none;
     }
 
-    #smiley1 {
-        background-image: url(../img/Happy\ Cloud.svg);
-        background-size: cover;
-        position: absolute;
-        left: 20px;
-        top: 500px;
-        height: 80px;
-        width: 80px;
-    }
+  main > #un {
+    min-height: 160px;
+    position: absolute;
+    top: 17%;
+  }
 
-    nav>ul {
-        display: none;
-    }
+  main > #un > p {
+    position: absolute;
+    width: 15rem;
+    left: 2rem;
+  }
 
-    .burger{
-        display: inline-block;
-        width: 40px;
-    }
+  main {
+    min-height: 30vh;
+  }
 
+  #deux{
+    margin-top: 32rem;
+  }
+
+  div{
+    margin: 10rem 0rem;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 2em;
+    top: 10em;
 }
 
-@media screen and (max-width:320px) and (orientation: Portrait){
+form {
+    width: 80%;
+    margin: 30px;
+    border: 2px solid black;
+    padding: 20px;
+    background: var(--orange);
+    border-radius: 10px;
+    color: white;
+  }
+  
+  form > h2 {
+    text-align: center;
+  }
+  
+  input {
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+  }
+  
+  label {
+    font-size: var(--psize);
+  }
+  
+  textarea {
+    padding: 10px;
+    width: 100%;
+    min-height: 5em;
+    margin: 10px;
+  }
+  
+  button {
+    background: white;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    height: 30px;
+  }
 
-    header>nav>a>img{
-        display: block;
-        width: 40px;
-    }
-
-    .burger{
-        display: inline-block;
-        width: 30px;
-    }
-
-    h1 {
-        color: black;
-        font-size: 40px;
-        font-family: 'Lilita One', cursive;
-        text-align: center;
-    }
-
-    nav>ul {
-        display: none;
-    }
-
-    main>span {
-        background-image: url(../img/Ellipse\ 5.svg);
-        background-size: cover;
-        position: absolute;
-        top: 25%;
-        right: 0;
-        width: 30px;
-        height: 100px;
-    }
-    /* #smiley1 {
-        background-image: url(../img/Happy\ Cloud.svg);
-        background-size: cover;
-        position: absolute;
-        left: 0px;
-        top: 440px;
-        height: 80px;
-        width: 80px;
-    } */
-
-    main>#un {
-
-        height: 160px;
-        position: absolute;
-        top: 17%;
-        left: 5px;
-    }
-    
-    main>#un>p {
-        display: block;
-        padding: 10px;
-        font-size: var(--psize);
-        text-align: center;
-    }
-
-    main {
-        min-height: 30vh;
-    }
-
-    form{
-        display: block;
-        width: 90%;
-        margin: 10% 30% ;
-        border: 2px solid black;
-        padding: 10px;
-        background: var(--orange);
-        border-radius: 10px;
-        color: white;
-        font-size: var(--psize);
-    }
-
-    form>h2{
-        text-align: center;
-        padding-bottom: 1rem;
-        font-size: var(--psize);
-    }
-
-    input{
-        padding: 10px;
-        height: 25px;
-        width: 90%;
-        outline: none;
-        border: 1px solid black;
-        margin: 10px;
-    }
-
-    main>#deux {
-        position: relative;
-        display: flex;
-        top: 40%;
-        left: -25%;
-    }
-
-    footer>a>img {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 150px;
-    }
-    
+  footer > a > img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+  }
 }
