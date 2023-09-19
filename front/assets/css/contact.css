@@ -90,14 +90,12 @@ main > #un > p {
   top: 7em;
 }
 
-
-
 div {
   width: 400px;
   height: 500px;
   position: absolute;
   left: 35em;
-  top: 27em;
+  top: 15em;
 }
 
 h1 {
@@ -251,8 +249,8 @@ footer > ul > li {
     width: 400px;
     height: 500px;
     position: absolute;
-    left: 20em;
-    top: 27em;
+    left: 25em;
+    top: 15em;
 }
 
   nav > ul {
