@@ -54,7 +54,7 @@ CREATE TABLE Intergen.donneur(
 CREATE TABLE Intergen.don(
     id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     email VARCHAR(100) NOT NULL,
-    DATETIME VARCHAR(8) NOT NULL,
+    date DATETIME NOT NULL,
     donneur_id TINYINT UNSIGNED NOT NULL,
     FOREIGN KEY(donneur_id) REFERENCES
     Intergen.donneur(id)
@@ -97,7 +97,8 @@ VALUE
 
 INSERT INTO Intergen.etablissement
 VALUE 
-    (NULL, 'EHPAD 1', 'ephad1@gmail.com', '6789012345', '1 rue ephad1 75000 Paris' )
+    (NULL, 'EHPAD 1', 'ephad1@gmail.com', '6789012345', '1 rue ephad1 75000 Paris' ),
+    (NULL, '0rphelinat 1', 'orphelinat1@gmail.com', '0787012345', '2 rue Orphelinat 75000 Paris' )
 ;
 
 INSERT INTO Intergen.responsable
@@ -116,10 +117,49 @@ VALUE
 
 -- INSERT INTO Intergen.activiter
 -- VALUE
---     (NULL, '')
-
+--     (NULL, '');
 
 INSERT INTO Intergen.donneur
 VALUE 
-    (NULL, 'Maimouna', 'Kone', 'maimouna@intergen.com', '1 rue ephad1 75000 Paris')
+    (NULL, 'Maimouna', 'Kone', 'maimouna@intergen.com', '1 rue ephad1 75000 Paris'),
+    (NULL, 'Mai', 'Ko', 'maimai@intergen.com', '2 rue ephad1 75000 Paris'),
+    (NULL, 'Jean', 'Luc', 'jeanluc@intergen.com', '3 rue ephad1 75000 Paris'),
+    (NULL, 'Alice', 'Rosée', 'rosée@intergen.com', '4 rue ephad1 75000 Paris')
 ;
+
+INSERT INTO Intergen.don
+VALUES 
+    (NULL, 'maimouna@intergen.com', '2023-09-01 12:00:00', 1),
+     (NULL, 'maimai@intergen.com', '2023-09-20 00:10:00', 2),
+    (NULL, 'jeanluc@intergen.com', '2023-08-30 03:03:00', 3),
+    (NULL, 'rosée@intergen.com', '2023-09-10 01:00:00', 4)
+    ;
+   
+
+
+
+-- INSERT INTO Intergen.etablissement_programme
+-- VALUE
+-- (1,2),
+-- (2,1),
+-- (1,3),
+-- (1,5),
+-- (1,4);
+
+
+-- INSERT INTO Intergen.programme_association
+-- VALUE
+-- (1,1),
+-- (2,1),
+-- (3,1),
+-- (4,1),
+-- (5,1);
+
+-- INSERT INTO Intergen.don_donneur
+-- VALUE
+-- (1,1),
+-- (2,1),
+-- (3,1),
+-- (4,1);
+
+
