@@ -24,40 +24,52 @@ header {
     background: var(--orange);
     position: fixed;
     z-index: 10;
-}
-
-nav {
-    position: absolute;
+  }
+  
+  header > nav {
+    z-index: 10;
+    background: var(--orange);
+    position: fixed;
     height: 30px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-}
-
-
-a {
-    /* font-weight: var(--semi-bold); */
+  }
+  
+  a {
+    font-weight: var(--semi-bold);
     color: white;
-}
-
-nav>#logo>img {
+  }
+  
+  nav > #logo > img {
     width: 120px;
-}
-
-nav>ul {
+  }
+  
+  nav > ul {
     display: flex;
-}
-
-nav>ul>li {
+  }
+  
+  nav > ul > li {
     display: flex;
     margin: 0 20px;
-}
-
-.burger{
+    padding-top: 15px;
+  }
+  
+  nav > ul > li:last-child {
+    display: block;
+    width: 150px;
+    height: 45px;
+    background: var(--bleu);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .burger {
     display: none;
-}
+  }
 
 main {
     width: 100%;

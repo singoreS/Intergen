@@ -115,6 +115,7 @@ span{
   position: absolute;
   width: 350px;
   height: 70vh;
+  bottom: 9%;
   left: 60%;
   border-radius: 10%;
 }
