@@ -43,6 +43,15 @@ CREATE TABLE Intergen.activiter(
     list_activiter VARCHAR(20) NOT NULL
 );
 
+
+CREATE TABLE Intergen.programme_activiter(
+    programme_id TINYINT UNSIGNED NOT NULL,
+    activiter_id TINYINT UNSIGNED NOT NULL,
+    FOREIGN KEY(programme_id) REFERENCES Intergen.programme(id),
+    FOREIGN KEY(activiter_id) REFERENCES Intergen.activiter(id),
+    PRIMARY KEY(programme_id, activiter_id)
+);
+
 CREATE TABLE Intergen.donneur(
     id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     firstname VARCHAR(30) NOT NULL,
@@ -135,31 +144,47 @@ VALUES
     (NULL, 'rosée@intergen.com', '2023-09-10 01:00:00', 4)
     ;
    
+--    Intergen.activiter
+INSERT INTO Intergen.activiter
+VALUES 
+    (NULL, "Piscine"),
+    (NULL, "Informatique"),
+    (NULL, "Cuisine"),
+    (NULL, "Atelier Artistique"),
+    (NULL, "Histoire")
+    ;
+
+INSERT INTO Intergen.etablissement_programme
+VALUE
+(1,2),
+(2,1),
+(1,3),
+(1,5),
+(1,4);
+
+INSERT INTO Intergen.programme_activiter
+VALUE
+(1,1),
+(1,2),
+(2,3),
+(2,5),
+(3,4)
+;
 
 
+INSERT INTO Intergen.programme_association
+VALUE
+(1,1),
+(2,1),
+(3,1),
+(4,1),
+(5,1);
 
--- INSERT INTO Intergen.etablissement_programme
--- VALUE
--- (1,2),
--- (2,1),
--- (1,3),
--- (1,5),
--- (1,4);
-
-
--- INSERT INTO Intergen.programme_association
--- VALUE
--- (1,1),
--- (2,1),
--- (3,1),
--- (4,1),
--- (5,1);
-
--- INSERT INTO Intergen.don_donneur
--- VALUE
--- (1,1),
--- (2,1),
--- (3,1),
--- (4,1);
+INSERT INTO Intergen.don_donneur
+VALUE
+(1,1),
+(2,1),
+(3,1),
+(4,1);
 
 
